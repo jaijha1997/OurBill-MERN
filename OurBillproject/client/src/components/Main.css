@@ -1,0 +1,90 @@
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+  .center1 {
+    margin: auto;
+    width: 80%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+.addbill{
+    margin-top: 15px !important;
+    text-align: center;
+
+    /* margin: auto !important; */
+    display: flex  !important;
+    flex-wrap: wrap !important;
+  justify-content: space-around !important;
+
+}
+
+.enterarea{
+    
+    margin: auto  !important;
+    width: 100% !important;
+    display: inline-flex;
+    justify-content: space-around !important;
+    color: black !important;
+    
+}
+.But{
+    
+    margin: 25px 400px;
+    background-color:skyblue;
+    color:black;
+    text-decoration-style: solid;
+    font-size: large;
+    
+}
+.allbillheader{
+  align-items:baseline;
+  border-style: solid;
+  border-color: blue;
+  text-align: center; 
+  background-color: antiquewhite;
+
+}
+.Mainpage{
+  margin: auto;
+    width: 50%;
+    font-size:xx-large;
+    
+
+}
+.buttonalign{
+  margin-right: 20px;
+  background-color: aqua;
+  text-decoration: none;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15%;
+  border-color: brown;
+}
+/* .txtcolor{
+  color: black;
+  font-weight: bolder;
+  
+  text-decoration: none;
+} */
+.bg{
+  background-color:black;
+}
+.tex{
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.inp{
+
+  display: inline;
+  flex-direction: row-reverse;
+  font-size:large;
+  margin-left:50px;
+  background-color:skyblue;
+  border:2px;
+  border-color:blue;
+  border-style:solid;
+}
