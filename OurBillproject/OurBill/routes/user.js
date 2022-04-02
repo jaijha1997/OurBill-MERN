@@ -61,9 +61,12 @@ const storage = multer.diskStorage({
 
 
 router.post('/register',async(req,res)=>{
-    try{
+    
+  try{ 
+      
         let saveuser= await new user(req.body).save()
         res.status(200).send({Message:"User Successfully entered in DB",data:saveuser,success:true})
+      
     }
     catch(err){
         console.log(err)

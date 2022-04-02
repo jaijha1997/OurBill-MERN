@@ -67,7 +67,7 @@ catch(err){
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicPassword">
     
-    <Form.Control  value={password}  placeholder="Enter Password" onChange={(e)=>newpassword(e.target.value) }/>
+    <Form.Control type="Password" value={password}  placeholder="Enter Password" onChange={(e)=>newpassword(e.target.value) }/>
   </Form.Group>
 
   <Button variant="primary" type="Button" onClick={sav}>

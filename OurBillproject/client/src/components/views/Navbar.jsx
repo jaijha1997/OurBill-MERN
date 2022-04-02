@@ -33,10 +33,10 @@ function Navheader(){
       
       <ul id="nav-mobile" >
         <li>< Link to ="/Home"> Home</Link></li>
-        <li><Link to ="/Todaysbill"> Today Bill</Link></li>
-        <li>< Link to ="/AddBill"> New Bill</Link></li>
+        <li><Link to ="/bills"> Bills</Link></li>
+        {/* <li>< Link to ="/AddBill"> New Bill</Link></li> */}
         {/* <li><Link to ="/Addpurhchase"> New purchase</Link></li> */}
-        {/* <li><Link to ="/viewpurchase"> Today purchase</Link></li> */}
+        <li><Link to ="/purchase"> Purchase</Link></li>
         <li>< Link to ="/Profile"> Profile</Link></li>
       </ul>
     </div>

@@ -27,11 +27,11 @@ function App(){
     
     <Route  path="/" element={<Mainpage/>}/>
     <Route  path="/Home" element={<><Navheader></Navheader><Home/></>}/>
-    <Route path="/Todaysbill" element ={<><Navheader></Navheader><Todaysbill/></>}/>
+    <Route path="/bills" element ={<><Navheader></Navheader><Todaysbill/></>}/>
     
-    <Route path="/AddBill" element ={<><Navheader></Navheader><Addbill/></>}/>
-    <Route path="/Addpurhchase" element ={<><Navheader></Navheader><Addpurchase/></>}/>
-    <Route path="/viewpurchase" element ={<><Navheader></Navheader><Viewpurchase/></>}/>
+    {/* <Route path="/AddBill" element ={<><Navheader></Navheader><Addbill/></>}/> */}
+    {/* <Route path="/Addpurchase" element ={<><Navheader></Navheader><Addpurchase/></>}/> */}
+    <Route path="/purchase" element ={<><Navheader></Navheader><Viewpurchase/></>}/>
     <Route path="/Profile" element ={<><Navheader></Navheader><Profile/></>}/>
     
     
