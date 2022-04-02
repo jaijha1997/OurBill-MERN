@@ -17,7 +17,7 @@ function Eform(){
   const sav =  ()=> {
     console.log(newdata.data)
    
-    axios.patch(`http://localhost:3000/user/editprofile/${id}`,{
+    axios.patch(`/user/editprofile/${id}`,{
 Name:name,Nickname:nick,
 
  'Content-Type':'application/json'

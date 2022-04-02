@@ -27,7 +27,7 @@ function Profile() {
   console.log(newdata.data)
 
   useEffect(() => {
-    fetch(`http://localhost:3000/user/viewdetails/${number}`, {
+    fetch(`/user/viewdetails/${number}`, {
       method: 'GET',
       headers: {
         "Authorization": "Bearer " + token,
@@ -42,7 +42,7 @@ function Profile() {
         newnick(data.data.Nickname)
         newnumber(data.data.Number)
       })
-      .then(fetch(`http://localhost:3000/user/viewphoto/${number}`, {
+      .then(fetch(`/user/viewphoto/${number}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'image/jpeg',

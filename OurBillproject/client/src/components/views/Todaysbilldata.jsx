@@ -11,7 +11,7 @@ function Todaysbilldata(){
     var token =data.data.Token
     // arnew.map((val)=>{console.log(val.name,val.age)})
     const [old,ne]=useState([])
-useEffect(()=>{fetch('http://localhost:3000/bill/todaybill', {
+useEffect(()=>{fetch('/bill/todaybill', {
           method: 'GET',
          headers: {"Authorization" : "Bearer "+ token,
           'Content-Type':'application/json',}
@@ -40,7 +40,7 @@ return (<div >
   
 </tr>
 </thead>
-<tbody style={{color:'red',fontFamily:'cursive'}}>
+<tbody style={{color:'red',fontWeight:'bold'}}>
 
 {old.map((val)=>(
        <tr> 

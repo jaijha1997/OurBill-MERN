@@ -12,7 +12,7 @@ function Register(){
   const[password,newpassword]=useState(null)
 
   const sav =  ()=> {
-   fetch("http://localhost:3000/user/register",{
+   fetch("/user/register",{
     method:"POST",
     headers:{'Content-Type':'application/json'},
     body: JSON.stringify({Name:name,Nickname:nick,Number:num,Password:password})

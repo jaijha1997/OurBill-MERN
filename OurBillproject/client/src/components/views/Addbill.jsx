@@ -11,7 +11,7 @@ function Addbill() {
 
 
   // let Date,Sender,Reciever,Amount,Pending_amount,Total,Earlier_a
-  let [date, newdate] = useState("--/--/--")
+  let [date, newdate] = useState(null)
   let [sender, newsender] = useState("")
   let [receiver, newreciever] = useState("")
   let [amount, newamount] = useState("")
@@ -26,7 +26,7 @@ function Addbill() {
 
   const addbill = () => {
 
-    fetch('http://localhost:3000/bill/addbill', {
+    fetch('/bill/addbill', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -62,12 +62,12 @@ function Addbill() {
     <Card style={{ width: '30rem'}} className="center1"  >
       <Form>
         
-          
+      <Form.Group className="mb-3" >  
           <div className='enterarea'>
              <Form.Label style={{ color:'blue',fontSize:'large',marginRight:'10px'}} >Date</Form.Label>
              <div className='inp'>
             {/* <TextField id="date"  className='inp' value={date} onChange={(e) => newdate(e.target.value)} /> */}
-            <TextField
+            <TextField style={{width:'150px',height:'20px',marginTop:'10px',marginBottom:'10px'}}
         id="date"
         type="date"
         value={date}
@@ -79,7 +79,7 @@ function Addbill() {
     
             </div>
             </div>
-          
+            </Form.Group>
         
           <Form.Group className="mb-3" >
           <div className='enterarea'>

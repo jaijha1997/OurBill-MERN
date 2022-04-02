@@ -22,7 +22,7 @@ const sav=async ()=>{
 
   try{
   
-const {data}=await axios.post("http://localhost:3000/login/user",{
+const {data}=await axios.post("/login/user",{
 Number:number,Password:password,
 
  'Content-Type':'application/json'
