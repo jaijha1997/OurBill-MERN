@@ -10,12 +10,6 @@ var usersRouter = require('./routes/user');
 var purchaseRouter = require('./routes/purchase');
 var billrouter =require('./routes/newbills')
 var loginrouter =require('./routes/login')
-// Making Build Folder as Public 
-app.use(express.static(path.join(__dirname, 'build')));
-
-app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 
 var app = express();
